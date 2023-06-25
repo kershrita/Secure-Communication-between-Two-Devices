@@ -11,6 +11,7 @@ This project is special than the rest of the other projects that I have done so 
 - [Components](#components)
 - [Usage](#usage)
 - [Configuration](#configuration)
+- [Contributing](#contributing)
 
 ## Features
 
@@ -25,38 +26,45 @@ This project is special than the rest of the other projects that I have done so 
 
 To get started with the CNC plotter machine, follow these steps:
 
-1. Assemble the hardware components [Transmitter] according to this ![schematic diagram](transmitter%20device/transmitter%20circuit.png).
-2. Connect the CD-ROM stepper motors to the motor driver, and then connect the motor driver to the Arduino Uno.
-3. Download and install [Arduino IDE](https://www.arduino.cc/en/software), [Inkscape 0.91](https://inkscape.org/release/inkscape-0.91/?latest=1) and [Processing](https://processing.org/download).
-4. Install the [AFMotor](AFMotor.rar) Library, you can install it manually by downloading the files and install it into Arduino IDE or directly from library manager.
-5. Adjust the pen holder to securely hold the pen or marker.
-6. Place a sheet of paper or a drawing surface on the flat surface where you want the plotter to draw.
-7. Power on the Arduino Uno and initiate communication with the plotter machine.
-8. There is ready gcode to test if you want.
-8. If you get stucked with any step, you can give a look for the original article [here](https://electricdiylab.com/how-to-make-arduino-mini-cnc-plotter-machine/).
-9. Output, [our machine while drawing](https://drive.google.com/file/d/1T6XbWHDwXpsRdm7keNW0uuRVcscyL0hK/view).
-![output](output.jpg)
+1. Assemble the hardware components [Transmitter] according to this. 
+![schematic diagram](transmitter%20device/transmitter%20circuit.png)
+2. Assemble the hardware components [Receiver] according to this. 
+![schematic diagram](receiver%20device/receiver%20circuit.png)
+3. After set up the circuit connections by connecting the NRF24L01 modules to the Arduino Nano boards as per the provided schematic diagram.
+4. Install the required libraries for NRF24L01 module, you can install it manually by downloading [NRF24L01](RF24-1.4.6.zip) module.
+5. Upload the respective Arduino sketches to the Arduino Nano devices.
+6. Power on the devices using the appropriate power supply.
+7. Ensure that the devices establish a wireless connection by checking the status LEDs on the NRF24L01 modules.
+8. Start sending and receiving encrypted data between the devices.
 
 ## Components
 
 - 2 * Arduino Nano
 - 2 * NRF24L01 Module
 - 1 * LCD 2x16
+- 1 * Buzzer
 - 1 * 10K Potentiometer
 
 ## Usage
 
-Once the CNC plotter machine is set up and connected, you can use various methods to control its movements and create drawings:
+Once the Secure Communication system is set up and the devices are connected, you can use the following instructions to securely communicate between them:
 
-- **Direct Commands**: You can send direct commands to the Arduino Uno via a serial terminal or a custom software interface to control the plotter machine's movements.
-- **G-Code**: Generate G-code instructions using software such as Inkscape or CAD programs, and then send the G-code commands to the plotter machine for precise drawing.
-- **Predefined Patterns**: Utilize preconfigured patterns or designs by storing them in the Arduino's memory or by creating specific functions in the Arduino sketch.
+- Ensure that both devices are powered on and within range of each other.
+- The devices will automatically establish a wireless connection using the NRF24L01 modules.
+- Use the provided functions in the Arduino sketches to encrypt and decrypt the data before sending and after receiving.
+- Send the encrypted data from one device to the other using the established wireless connection.
+- On the receiving device, decrypt the received data to retrieve the original message.
+- Validate the authenticity of the received data using the implemented authentication mechanisms.
 
 ## Configuration
 
-The CNC plotter machine can be customized to suit your specific needs and preferences. Here are a few customization options:
+The Secure Communication project implements the following security measures:
 
-- **Drawing Size**: Adjust the dimensions of the plotter machine to accommodate larger or smaller drawing surfaces.
-- **Pen Options**: Experiment with different pens or markers to achieve various line thicknesses and effects.
-- **Control Interface**: Develop a custom software interface to control the plotter machine and send commands more conveniently.
-- **Additional Features**: Expand the functionality of the plotter machine by adding sensors, an LCD display, or additional actuators.
+- **Encryption Algorithms**: Utilize strong encryption algorithms, such as AES (Advanced Encryption Standard), to encrypt the data transmitted between the devices.
+- **Authentication Mechanisms**: Implement authentication mechanisms, such as digital signatures or shared secret keys, to verify the identity of the devices and prevent unauthorized access.
+- **Secure Communication Protocols**: Utilize secure communication protocols, such as TLS (Transport Layer Security), to protect against data tampering and interception.
+- **Key Management**: Employ secure key management practices, such as key exchange protocols or key rotation, to maintain the confidentiality of encryption keys.
+
+## Contributing
+
+Contributions to the Secure Communication with NRF24L01 Module and Arduino Nano project are welcome! If you have any ideas, improvements, or bug fixes, feel free to open an issue or submit a pull request. Together, we can enhance the project and make it more secure and reliable for everyone.
