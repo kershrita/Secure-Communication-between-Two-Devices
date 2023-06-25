@@ -25,7 +25,7 @@ This project is special than the rest of the other projects that I have done so 
 
 To get started with the CNC plotter machine, follow these steps:
 
-1. Assemble the hardware components [Transmitter] according to this ![schematic diagram](transmitter-device/transmitter-circuit.png).
+1. Assemble the hardware components [Transmitter] according to this ![schematic diagram](transmitter%20device/transmitter%20circuit.png).
 2. Connect the CD-ROM stepper motors to the motor driver, and then connect the motor driver to the Arduino Uno.
 3. Download and install [Arduino IDE](https://www.arduino.cc/en/software), [Inkscape 0.91](https://inkscape.org/release/inkscape-0.91/?latest=1) and [Processing](https://processing.org/download).
 4. Install the [AFMotor](AFMotor.rar) Library, you can install it manually by downloading the files and install it into Arduino IDE or directly from library manager.
