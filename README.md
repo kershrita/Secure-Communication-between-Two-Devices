@@ -1,6 +1,8 @@
 # CNC Plotter Machine
 
-Using Arduino Uno and a few resources, we have designed a CNC Plotter Machine that has the ability to draw with a pen via G-Code. This machine can draw with dimensions of 4 * 4 cm, and you can design a drawing machine with larger dimensions than these by enlarging the size of the x axis and y axis according to your requirements.
+The Secure Communication with NRF24L01 Module and Arduino Nano project aims to establish a secure and encrypted communication channel between two devices using the NRF24L01 wireless module and Arduino Nano microcontrollers. This project ensures the confidentiality and integrity of data transmitted between the devices by implementing encryption algorithms and secure communication protocols.
+
+This project is special than the rest of the other projects that I have done so far, as it contains an illustration of the circuit of the sender and the receiver i have made using Fritzing software, and a PCB drawing ready to print it using EasyEDA software. All of this you will find it in this [folder](https://oshwlab.com/ashrafabdulkhaliq80/security-project).
 
 ## Table of Contents
 
@@ -12,17 +14,18 @@ Using Arduino Uno and a few resources, we have designed a CNC Plotter Machine th
 
 ## Features
 
-- **Versatile Drawing Capability**: The CNC plotter machine can draw various patterns, shapes, and text based on the provided input.
-- **Precise Movement Control**: The machine uses stepper motors to precisely control the positioning of the pen, ensuring accurate drawing.
-- **Easy Control Interface**: The Arduino Uno serves as the control unit, allowing you to send commands to the plotter machine.
-- **Customizable Pen Holder**: The plotter machine includes a pen holder that can be adjusted to accommodate different pen sizes and types.
-- **Compact and Portable**: The use of an Arduino Uno and a CD-ROM drive makes the CNC plotter machine compact and portable.
+- **Wireless Communication**: Establish a wireless communication link between two Arduino Nano devices using the NRF24L01 module.
+- **Encryption**: Implement encryption algorithms to encrypt the data transmitted between the devices, ensuring confidentiality.
+- **Authentication**: Authenticate the devices to establish a trusted communication channel and prevent unauthorized access.
+- **Secure Protocols**: Utilize secure communication protocols to protect against data tampering or interception.
+- **Reliable Delivery**: Implement mechanisms to ensure reliable delivery of data between the devices.
+- **Configurable Parameters**: Customize encryption algorithms, authentication mechanisms, and communication protocols according to your specific requirements.
 
 ## Getting Started
 
 To get started with the CNC plotter machine, follow these steps:
 
-1. Assemble the hardware components according to this [video](https://youtu.be/Gm6bH3p6cNQ).
+1. Assemble the hardware components [Transmitter] according to this [schematic diagram](transmitter device/transmitter circuit.png).
 2. Connect the CD-ROM stepper motors to the motor driver, and then connect the motor driver to the Arduino Uno.
 3. Download and install [Arduino IDE](https://www.arduino.cc/en/software), [Inkscape 0.91](https://inkscape.org/release/inkscape-0.91/?latest=1) and [Processing](https://processing.org/download).
 4. Install the [AFMotor](AFMotor.rar) Library, you can install it manually by downloading the files and install it into Arduino IDE or directly from library manager.
@@ -36,10 +39,10 @@ To get started with the CNC plotter machine, follow these steps:
 
 ## Components
 
-- 1 * Arduino Uno
-- 1 * Motor Driver L293D Shield
-- 1 * Mini Servo Motor
-- 2 * CD-ROMs
+- 2 * Arduino Nano
+- 2 * NRF24L01 Module
+- 1 * LCD 2x16
+- 1 * 10K Potentiometer
 
 ## Usage
 
