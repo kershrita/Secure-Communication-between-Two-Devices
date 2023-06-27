@@ -1,4 +1,4 @@
-# CNC Plotter Machine
+#  Secure Communication between Two Devices
 
 The Secure Communication with NRF24L01 Module and Arduino Nano project aims to establish a secure and encrypted communication channel between two devices using the NRF24L01 wireless module and Arduino Nano microcontrollers. This project ensures the confidentiality and integrity of data transmitted between the devices by implementing encryption algorithms and secure communication protocols.
 
@@ -36,7 +36,7 @@ To get started with the CNC plotter machine, follow these steps:
 6. Power on the devices using the appropriate power supply.
 7. Ensure that the devices establish a wireless connection by checking the status LEDs on the NRF24L01 modules.
 8. Start sending and receiving encrypted data between the devices.
-
+9. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=2DhNYKvzQjY).
 ## Components
 
 - 2 * Arduino Nano
