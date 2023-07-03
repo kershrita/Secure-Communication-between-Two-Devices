@@ -30,12 +30,14 @@ To get started with the CNC plotter machine, follow these steps:
 ![schematic diagram](transmitter%20device/transmitter%20circuit.png)
 3. Assemble the hardware components [Receiver] according to this. 
 ![schematic diagram](receiver%20device/receiver%20circuit.png)
-
-4. After set up the circuit connections by connecting the NRF24L01 modules to the Arduino Nano boards as per the provided schematic diagram.
-5. Install the required libraries for NRF24L01 module, you can install it manually by downloading [NRF24L01](RF24-1.4.6.zip) module.
-5. Upload the respective Arduino sketches to the Arduino Nano devices.
-6. Power on the devices using the appropriate power supply.
-7. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=2DhNYKvzQjY).
+4. Clone or Download the repository to your local machine using the following command:
+```
+git https://github.com/kershrita/Secure-Communication-between-Two-Devices.git
+5. After set up the circuit connections by connecting the NRF24L01 modules to the Arduino Nano boards as per the provided schematic diagram.
+6. Install the required libraries for NRF24L01 module, you can install it manually by downloading [NRF24L01](RF24-1.4.6.zip) module.
+7. Upload the respective Arduino sketches to the Arduino Nano devices.
+8. Power on the devices using the appropriate power supply.
+9. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=2DhNYKvzQjY).
 
 ## Usage
 
