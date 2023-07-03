@@ -10,7 +10,6 @@ This project is special than the rest of the other projects that I have done so 
 - [Usage](#usage)
 - [Features](#features)
 - [Configuration](#configuration)
-- [Documentation](#documentation)
 - [Acknowledgments](#acknowledgments)
 - [Contributing](#contributing)
 - [License](#license)
