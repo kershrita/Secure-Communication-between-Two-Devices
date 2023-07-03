@@ -6,44 +6,36 @@ This project is special than the rest of the other projects that I have done so 
 
 ## Table of Contents
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Components](#components)
+- [Installation](#installation)
 - [Usage](#usage)
+- [Features](#features)
 - [Configuration](#configuration)
+- [Documentation](#documentation)
+- [Acknowledgments](#acknowledgments)
 - [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Features
-
-- **Wireless Communication**: Establish a wireless communication link between two Arduino Nano devices using the NRF24L01 module.
-- **Encryption**: Implement encryption algorithms to encrypt the data transmitted between the devices, ensuring confidentiality.
-- **Authentication**: Authenticate the devices to establish a trusted communication channel and prevent unauthorized access.
-- **Secure Protocols**: Utilize secure communication protocols to protect against data tampering or interception.
-- **Reliable Delivery**: Implement mechanisms to ensure reliable delivery of data between the devices.
-- **Configurable Parameters**: Customize encryption algorithms, authentication mechanisms, and communication protocols according to your specific requirements.
-
-## Getting Started
+## Installation
 
 To get started with the CNC plotter machine, follow these steps:
+1. Components
+	- 2 * Arduino Nano
+	- 2 * NRF24L01 Module
+	- 1 * LCD 2x16
+	- 1 * Buzzer
+	- 1 * 10K Potentiometer
 
-1. Assemble the hardware components [Transmitter] according to this. 
+2. Assemble the hardware components [Transmitter] according to this. 
 ![schematic diagram](transmitter%20device/transmitter%20circuit.png)
-2. Assemble the hardware components [Receiver] according to this. 
+3. Assemble the hardware components [Receiver] according to this. 
 ![schematic diagram](receiver%20device/receiver%20circuit.png)
-3. After set up the circuit connections by connecting the NRF24L01 modules to the Arduino Nano boards as per the provided schematic diagram.
-4. Install the required libraries for NRF24L01 module, you can install it manually by downloading [NRF24L01](RF24-1.4.6.zip) module.
+
+4. After set up the circuit connections by connecting the NRF24L01 modules to the Arduino Nano boards as per the provided schematic diagram.
+5. Install the required libraries for NRF24L01 module, you can install it manually by downloading [NRF24L01](RF24-1.4.6.zip) module.
 5. Upload the respective Arduino sketches to the Arduino Nano devices.
 6. Power on the devices using the appropriate power supply.
-7. Ensure that the devices establish a wireless connection by checking the status LEDs on the NRF24L01 modules.
-8. Start sending and receiving encrypted data between the devices.
-9. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=2DhNYKvzQjY).
-## Components
-
-- 2 * Arduino Nano
-- 2 * NRF24L01 Module
-- 1 * LCD 2x16
-- 1 * Buzzer
-- 1 * 10K Potentiometer
+7. Get stucked? watch [tutorial video](https://www.youtube.com/watch?v=2DhNYKvzQjY).
 
 ## Usage
 
@@ -56,6 +48,15 @@ Once the Secure Communication system is set up and the devices are connected, yo
 - On the receiving device, decrypt the received data to retrieve the original message.
 - Validate the authenticity of the received data using the implemented authentication mechanisms.
 
+## Features
+
+- **Wireless Communication**: Establish a wireless communication link between two Arduino Nano devices using the NRF24L01 module.
+- **Encryption**: Implement encryption algorithms to encrypt the data transmitted between the devices, ensuring confidentiality.
+- **Authentication**: Authenticate the devices to establish a trusted communication channel and prevent unauthorized access.
+- **Secure Protocols**: Utilize secure communication protocols to protect against data tampering or interception.
+- **Reliable Delivery**: Implement mechanisms to ensure reliable delivery of data between the devices.
+- **Configurable Parameters**: Customize encryption algorithms, authentication mechanisms, and communication protocols according to your specific requirements.
+
 ## Configuration
 
 The Secure Communication project implements the following security measures:
@@ -65,6 +66,22 @@ The Secure Communication project implements the following security measures:
 - **Secure Communication Protocols**: Utilize secure communication protocols, such as TLS (Transport Layer Security), to protect against data tampering and interception.
 - **Key Management**: Employ secure key management practices, such as key exchange protocols or key rotation, to maintain the confidentiality of encryption keys.
 
+## Acknowledgments
+
+We would like to acknowledge the following resources and libraries that have been instrumental in developing Robot Car using DTMF Module:
+
+- **[Arduino IDE](https://www.arduino.cc/en/software)**:  An open-source integrated development environment (IDE) used for programming Arduino boards.
+
 ## Contributing
 
 Contributions to the Secure Communication with NRF24L01 Module and Arduino Nano project are welcome! If you have any ideas, improvements, or bug fixes, feel free to open an issue or submit a pull request. Together, we can enhance the project and make it more secure and reliable for everyone.
+
+## License
+
+Secure Communication between Two Devices is released under the [MIT License](LICENSE).
+
+## Contact
+
+- Mail: ashrafabdulkhaliq80@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ashraf-abdulkhaliq
+- GitHub: https://github.com/kershrita
